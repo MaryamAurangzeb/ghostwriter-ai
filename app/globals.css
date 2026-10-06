@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-mist text-ink antialiased}
+:focus-visible{outline:2px solid #6554F0;outline-offset:2px}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.rise{animation:rise .35s ease-out}.bob{animation:bob 1.2s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
